@@ -1,0 +1,135 @@
+.selectheader {
+    display: flex;
+    flex-direction: column;
+}
+
+.con-row {
+    display: flex;
+    line-height: 30px;
+    padding-bottom: 15px;
+    margin-left: 50px;
+}
+
+.con-row .val {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.con-row .name {
+    color: #8C8C8C;
+    margin-right: 7px;
+    white-space: nowrap;
+}
+
+.con-row .a.active {
+    background: #17A1FF;
+    color: #fff;
+}
+
+.con-row .a.active:hover {
+    background: #5bbcfd;
+    color: #ffffff;
+}
+
+.con-row .a {
+    padding: 0 11px;
+    border-radius: 4px;
+    color: #666;
+    cursor: pointer;
+}
+
+.con-row .a:hover {
+    color: #17A1FF
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    /* 创建5列，每列等宽 */
+    gap: 30px;
+    /* 设置网格间的间距 */
+    padding: 25px;
+  }
+  .empty-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;  /* 确保占满父容器的高度 */
+    grid-column: 1 / -1;  /* 占满整个网格 */
+}  
+  .movie-item {
+    background-color: #f0f0f0;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .movie-item:hover {
+    background-color: #dfdfdf;
+  }
+  
+  .movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 使文本在水平轴上居中 */
+    align-items: center;
+    /* 使文本在垂直轴上居中 */
+  }
+  
+  .movie-poster {
+    width: 100%;
+    height: 260px;
+  }
+  
+  .movie-title {
+    color: rgb(90, 90, 134);
+    font-weight: bold;
+  }
+  
+  .movie-data {
+    width: 200px;
+    /* 设置容器的宽度，可以根据需要调整 */
+    overflow: hidden;
+    /* 隐藏超出容器的内容 */
+    white-space: nowrap;
+    /* 防止文本换行 */
+    text-overflow: ellipsis;
+    /* 当文本超出容器时显示省略号 */
+    font-size: 14px;
+    /* 设置字体大小 */
+    color: #7a7a7a;
+    /* 设置字体颜色 */
+  }
+  
+  .movie-rating {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #7a7a7a;
+  }
+  
+  .stars {
+    display: flex;
+    margin-left: 8px;
+  }
+  
+  .stars .el-icon {
+    font-size: 16px;
+    color: #ccc;
+    /* 默认星星颜色 */
+    margin-right: 4px;
+  }
+  
+  .stars .el-icon.filled {
+    color: #f39c12;
+    /* 填充星星的颜色 */
+  }
+  
+  .rating-number {
+    margin-left: 8px;
+    color: #f39c12;
+  }

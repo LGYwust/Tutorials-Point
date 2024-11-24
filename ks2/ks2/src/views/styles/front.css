@@ -1,0 +1,180 @@
+.carousel-container {
+    width: 75%;
+    /* 设置容器宽度，控制走马灯的大小 */
+    margin: auto;
+    /* 居中容器 */
+  }
+  
+  .title {
+    font-size: 30px;
+    font-weight: 600;
+    color: red;
+  }
+  
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    line-height: 26px;
+  }
+  
+  .el-divider {
+    width: 65%;
+  }
+  
+  .goto {
+    color: #ef4238 !important;
+  }
+  
+  .all {
+    position: relative;
+    bottom: 2px;
+    font-size: 16px;
+  }
+  
+  .movie {
+    display: flex;
+    justify-content: space-between;
+    /* 左右分布卡片 */
+    margin: 25px;
+  }
+  
+  .left-card {
+    flex: 0 0 70%;
+    /* 左边的卡片占70%的宽度 */
+    min-width: 800px;
+    margin-right: 50px;
+    margin-left: 35px;
+  }
+  
+  .right-card {
+    flex: 0 0 22%;
+    min-width: 300px;
+    margin-right: 35px;
+    /* 右边的卡片占25%的宽度 */
+    height: 600px;
+    position: sticky;
+    top: 20vh;
+    /* 设置距离视口顶部的距离 */
+    align-self: flex-start;
+  }
+  
+  .movie-recommend {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: #37a;
+    cursor: pointer;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* 创建5列，每列等宽 */
+    gap: 30px;
+    /* 设置网格间的间距 */
+    padding: 25px;
+  }
+  
+  .movie-item {
+    background-color: #f0f0f0;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .movie-item:hover {
+    background-color: #dfdfdf;
+  }
+  
+  .movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 使文本在水平轴上居中 */
+    align-items: center;
+    /* 使文本在垂直轴上居中 */
+  }
+  
+  .movie-poster {
+    width: 100%;
+    height: 260px;
+  }
+  
+  .movie-title {
+    color: rgb(90, 90, 134);
+    font-weight: bold;
+  }
+  
+  .movie-data {
+    width: 150px;
+    /* 设置容器的宽度，可以根据需要调整 */
+    overflow: hidden;
+    /* 隐藏超出容器的内容 */
+    white-space: nowrap;
+    /* 防止文本换行 */
+    text-overflow: ellipsis;
+    /* 当文本超出容器时显示省略号 */
+    font-size: 14px;
+    /* 设置字体大小 */
+    color: #7a7a7a;
+    /* 设置字体颜色 */
+  }
+  
+  .movie-rating {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #7a7a7a;
+  }
+  
+  .stars {
+    display: flex;
+    margin-left: 8px;
+  }
+  
+  .stars .el-icon {
+    font-size: 16px;
+    color: #ccc;
+    /* 默认星星颜色 */
+    margin-right: 4px;
+  }
+  
+  .stars .el-icon.filled {
+    color: #f39c12;
+    /* 填充星星的颜色 */
+  }
+  
+  .rating-number {
+    margin-left: 8px;
+    color: #f39c12;
+  }
+  
+  .movie-ritem {
+    background-color: #f5f3f3;
+    display: flex;
+    padding: 15px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-ritem:hover {
+    background-color: #dfdfdf;
+  }
+  
+  .movie-rposter {
+    width: 75px;
+    height: auto;
+  }
+  
+  .movie-rinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 使文本在水平轴上居中 */
+    margin-left: 20px;
+  }
